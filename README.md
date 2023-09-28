@@ -2,19 +2,13 @@
 
 作者：倪响  邮箱：1870230468@qq.com
 ---
-1. __通过编写蓝牙模块代码发送指定格式数据__
-    数据格式要求：front:[ ]left:[ ]right:[ ],在"[ ]"中输出距离数据
-2. __手机下载蓝牙调试软件并进行蓝牙调试,建议使用软件“e调试"__
-3. __手机打开开发者模式__
-4. __电脑上配置mysql数据库(自行搜索相关教程)，并安装adb安卓调试工具__
-   [https://dl.google.com/android/repository/platform-tools_r34.0.4-windows.zip]
-5. __mysql创建一个新数据库__
-```sql
-#可以考虑使用原项目配置中的名字cardata
-create database cardata;
-```
-6. __配置target/config.properties文件__
-7. __在target文件夹下，打开cmd命令行，运行CarDataDB-3.1.jar文件__
-```
-java -jar CarDataDB-3.1.jar
-```
+由于项目中学校发的蓝牙模块一直连接不到电脑，而手机蓝牙调试软件可以进行正常连接，我选择通过使用手机接收蓝牙信号，然后手机与电脑通过usb进行连接，通过
+调试软件提供的“保存日志”功能进行中转，Java正则表达式对调试软件数据进行处理，做到了实时的小车数据的保存。
+
+主要技术：Java正则表达式，JDBC数据库连接
+
+__目前最新版本已上传，使用前请阅读文档README.md__
+
+百度网盘：(链接：https://pan.baidu.com/s/1Ip_YsqmkjKoKv7p_R5ZZ0Q?pwd=nxxn 提取码：nxxn)
+
+阿里云盘：(https://www.aliyundrive.com/s/UwRQt8vC5mR)
